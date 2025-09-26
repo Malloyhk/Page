@@ -1,83 +1,252 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Aparador de Pelos Portátil — Oferta Especial</title>
-  <meta name="description" content="Aparador de pelos masculino à prova d'água com LED. Recarregável, seguro e prático.">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Oferta Relâmpago — Aparador IPX7 com LED</title>
+  <meta name="description" content="Oferta relâmpago: Aparador de pelos portátil IPX7 com LED — bônus exclusivos, frete rápido e garantia 30 dias." />
+  <style>
+    /* Reset / base */
+    :root{
+      --bg:#0b1220; --card:#0f1724; --accent:#ff6b6b; --accent-dark:#e15252;
+      --muted:#9aa7b2; --white:#ffffff; --glass: rgba(255,255,255,0.04);
+      --success: #2bd48a;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,#031025 0%, #07142a 100%); color:var(--white); -webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#ff8a65);display:flex;align-items:center;justify-content:center;font-weight:700;color:#001}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:28px 0}
+    .kicker{background:linear-gradient(90deg,var(--accent),#ff8a65);padding:8px 12px;border-radius:999px;color:#081225;font-weight:700;display:inline-block;font-size:13px}
+    h1{font-size:32px;margin:12px 0 8px;line-height:1.05}
+    .lead{color:var(--muted);margin-bottom:16px;font-size:16px}
+    .price-block{display:flex;gap:12px;align-items:baseline;margin-bottom:12px}
+    .price{font-size:34px;font-weight:800;color:var(--accent)}
+    .old-price{font-size:14px;color:var(--muted);text-decoration:line-through}
+    .cta-row{display:flex;gap:12px;align-items:center;margin-bottom:6px}
+    .btn{padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn-buy{background:linear-gradient(90deg,var(--accent),var(--accent-dark));color:#081225;box-shadow:0 10px 30px rgba(255,107,107,0.12)}
+    .btn-ws{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white)}
+    .note{font-size:13px;color:var(--muted)}
+    /* Card */
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:18px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+    .product-img{width:100%;border-radius:10px;object-fit:cover}
+    /* urgency */
+    .meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .meta .pill{background:var(--glass);padding:8px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .countdown{font-weight:800;color:#fff;background:linear-gradient(90deg,#111827,#0b1220);padding:8px 12px;border-radius:8px;font-family:mono;font-size:16px}
+    .stock{color:var(--accent);font-weight:700}
+    /* value-adds */
+    .value-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}
+    .value-item{background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;font-size:14px}
+    .value-item b{color:var(--accent)}
+    /* testimonials */
+    .testimonials{margin-top:20px;display:grid;gap:10px}
+    .testi{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px}
+    /* guarantee */
+    .guarantee{display:flex;gap:12px;align-items:center;margin-top:12px}
+    .badge{background:#0b2f1f;color:var(--success);padding:8px 12px;border-radius:999px;font-weight:700;border:1px solid rgba(43,212,138,0.08)}
+    /* footer */
+    footer{margin-top:28px;padding:20px 0;color:var(--muted);font-size:13px;text-align:center}
+    /* responsive */
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr; padding:18px 0}
+      .product-img{max-height:300px}
+      .value-list{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <img src="assets/logo.svg" alt="Logo" class="logo">
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AP</div>
+        <div>
+          <div style="font-weight:700">Aparador Store</div>
+          <div style="font-size:12px;color:var(--muted)">Entrega rápida • 30 dias garantia</div>
+        </div>
+      </div>
       <nav>
         <a href="#features">Recursos</a>
-        <a href="#depoimentos">Avaliações</a>
+        <a href="#bonus">Bônus</a>
         <a href="#checkout">Comprar</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <h1>Aparador à Prova d’Água com LED</h1>
-          <p class="lead">Use no banho, sem cortes, recarregável e seguro. Oferta exclusiva: apenas <strong>R$149</strong>.</p>
-          <a href="#checkout" class="btn btn-primary">Comprar agora</a>
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <span class="kicker">OFERTA RELÂMPAGO</span>
+        <h1 id="hero-title">Aparador de pelos portátil — IPX7 + LED para precisão no banho</h1>
+        <p class="lead">Aproveite a oferta relâmpago: produto testado, garantia 30 dias e 3 bônus exclusivos — apenas por tempo limitado.</p>
+
+        <div class="price-block">
+          <div class="price">R$149</div>
+          <div class="old-price">R$219</div>
         </div>
-        <div class="hero-img">
-          <img src="./aparador.jpg" alt="Aparador de pelos">
+
+        <div class="cta-row">
+          <button class="btn btn-buy" id="buyBtn" aria-label="Comprar agora">Comprar agora — R$149</button>
+          <button class="btn btn-ws" id="whatsBtn">Falar no WhatsApp</button>
         </div>
-      </div>
-    </section>
 
-    <section id="features" class="section">
-      <div class="container">
-        <h2>Por que escolher este aparador?</h2>
-        <div class="features-grid">
-          <div class="feature"><h3>IPX7</h3><p>À prova d'água: use direto no banho.</p></div>
-          <div class="feature"><h3>LED Integrado</h3><p>Mais precisão em áreas difíceis.</p></div>
-          <div class="feature"><h3>Bateria Recarregável</h3><p>Até 40 minutos de uso contínuo.</p></div>
+        <div class="meta">
+          <div class="countdown" id="countdown">⏳ 00:00:00</div>
+          <div class="pill note">Estoque: <span class="stock" id="stockCount">12</span> unidades</div>
+          <div class="pill note">Frete rápido | 24–72h</div>
         </div>
-      </div>
-    </section>
 
-    <section id="depoimentos" class="section alt">
-      <div class="container">
-        <h2>Avaliações de clientes</h2>
-        <blockquote>“Muito bom! Usei no banho sem problemas. Recomendo.” — Carlos</blockquote>
-        <blockquote>“O LED ajuda muito, corte seguro e rápido.” — João</blockquote>
-      </div>
-    </section>
+        <div class="card" style="margin-top:14px">
+          <strong>O que você recebe:</strong>
+          <div class="value-list" id="bonus">
+            <div class="value-item">✅ <b>1x Aparador IPX7</b> (LED integrado)</div>
+            <div class="value-item">✅ <b>1x Estojo protetor Premium</b> (brinde)</div>
+            <div class="value-item">✅ <b>1x Lâmina extra</b> (instalada)</div>
+            <div class="value-item">✅ <b>Manual em PDF + vídeos</b> (como usar e conservar)</div>
+          </div>
 
-    <section id="checkout" class="section">
-      <div class="container">
-        <h2>Oferta Exclusiva</h2>
-        <p>Garanta o seu por apenas <strong>R$149</strong>. Frete grátis e entrega rápida.</p>
-        <form id="checkoutForm">
-          <input type="text" id="nome" placeholder="Seu nome" required>
-          <input type="email" id="email" placeholder="Seu e-mail" required>
-          <input type="tel" id="telefone" placeholder="WhatsApp">
-          <button type="submit" class="btn btn-primary">Pagar com Pix</button>
-        </form>
-        <div id="pix-area" class="pix-area" hidden>
-          <p>Escaneie o QR Code ou copie o código Pix abaixo:</p>
-          <img src="./pix-qrcode.png" alt="QR Pix" class="pix-qrcode">
-          <textarea readonly id="pix-code">00020126580014BR.GOV.BCB.PIX0136+5511999999995204000053039865405149.005802BR5925APARADOR STORE6009SAO PAULO62070503***6304ABCD</textarea>
-          <button class="btn btn-ghost" id="copyPix">Copiar código</button>
+          <div class="guarantee" style="margin-top:12px">
+            <div class="badge">GARANTIA 30D</div>
+            <div style="color:var(--muted)">Se não gostar, devolvemos o dinheiro — política simples e rápida.</div>
+          </div>
+        </div>
+
+        <div class="testimonials" aria-live="polite">
+          <div class="testi">“Usei no banho sem medo — muito prático. Entrega rápida.” — <b>Carlos</b></div>
+          <div class="testi">“O LED é ótimo pra contorno. Indico!” — <b>João</b></div>
         </div>
       </div>
+
+      <aside class="card" style="text-align:center">
+        <img src="https://images.unsplash.com/photo-1542293787938-c9e299b8801c?q=80&w=900&auto=format&fit=crop&sat=-20" alt="Aparador de pelos" class="product-img" />
+        <div style="margin-top:12px;font-size:14px;color:var(--muted)">Pronto para uso — bateria recarregável (≈40 min)</div>
+
+        <div style="margin-top:12px">
+          <button class="btn btn-buy" id="buyBtn2">Comprar agora — R$149</button>
+        </div>
+
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">
+          Pagamento via Pix (código rápido) ou cartão via checkout.
+        </div>
+      </aside>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Aparador Store. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+    <section id="features" class="card" style="margin-top:18px">
+      <h2>Recursos-chave</h2>
+      <ul style="color:var(--muted);line-height:1.6">
+        <li><b>IPX7</b> — uso no banho sem riscos.</li>
+        <li><b>LED integrado</b> — visualização precisa em regiões pequenas.</li>
+        <li><b>Design portátil</b> — leve e fácil de limpar.</li>
+        <li><b>Bateria</b> — até 40 minutos de uso contínuo.</li>
+      </ul>
+    </section>
 
-  <script src="script.js"></script>
+    <section style="margin-top:14px" class="card">
+      <h3>FAQ rápido</h3>
+      <p style="color:var(--muted)"><b>Envio:</b> enviamos em 24–48h a partir da confirmação do pagamento. <br/>
+      <b>Garantia:</b> 30 dias contra defeito de fabricação. <br/>
+      <b>Pagamento:</b> Pix, cartão (via checkout externo).</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Aparador Store — Oferta válida enquanto durar o estoque.
+    </footer>
+  </div>
+
+  <script>
+    // === CONFIGURAÇÕES: troque esta URL para o seu checkout real ===
+    const CHECKOUT_URL = "https://seu-checkout.com/checkout?produto=aparador&utm_source=landing&utm_medium=relampago";
+    const WHATSAPP_NUMBER = "5511999999999"; // formato internacional sem símbolos
+
+    // Contador regressivo — 48 horas a partir da primeira visita (persistente via localStorage)
+    (function countdownInit(){
+      const key = 'relampago_expires_v2';
+      let expires = localStorage.getItem(key);
+      if(!expires){
+        // 48 horas a partir de agora
+        const ts = Date.now() + 48*60*60*1000;
+        localStorage.setItem(key, ts);
+        expires = ts;
+      }
+      function tick(){
+        const remaining = parseInt(localStorage.getItem(key), 10) - Date.now();
+        if(remaining <= 0){
+          document.getElementById('countdown').textContent = "⏳ Oferta encerrada";
+          // opcional: desabilitar botões
+          // disableBuy();
+          return;
+        }
+        const h = Math.floor(remaining / (1000*60*60)); 
+        const m = Math.floor((remaining % (1000*60*60)) / (1000*60));
+        const s = Math.floor((remaining % (1000*60)) / 1000);
+        document.getElementById('countdown').textContent = `⏳ ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+      }
+      tick(); setInterval(tick, 1000);
+    })();
+
+    // Estoque dinâmico (simulação) — decrementa com base em visitas, persistido em localStorage
+    (function stockInit(){
+      const key = 'relampago_stock_v2';
+      let stock = parseInt(localStorage.getItem(key) || "12", 10);
+      const stockEl = document.getElementById('stockCount');
+      function update(){
+        stockEl.textContent = stock;
+        if(stock <= 3) stockEl.style.color = 'orange';
+        if(stock <= 1) stockEl.style.color = 'crimson';
+      }
+      update();
+      // Decrementa ocasionalmente (simulação de outras compras)
+      setInterval(() => {
+        if(stock > 1 && Math.random() < 0.18){ // ~18% chance a cada intervalo
+          stock = stock - 1;
+          localStorage.setItem(key, stock);
+          update();
+        }
+      }, 35000 + Math.random()*20000);
+      // Ao comprar local, decrementa imediatamente
+      window.reduceStock = function(){
+        if(stock > 0){ stock = stock - 1; localStorage.setItem(key, stock); update(); }
+      }
+    })();
+
+    // Botões de compra — redireciona para checkout externo com utm + produto
+    function goToCheckout(){
+      // opcional: antes de redirecionar, podemos enviar dados via querystring (nome/email) - aqui simplificado
+      // Se quiser coletar nome/email, crie formulário e envie como params.
+      window.reduceStock();
+      // redireciona
+      window.location.href = CHECKOUT_URL;
+    }
+
+    // WhatsApp
+    function openWhats(){
+      const msg = encodeURIComponent("Olá! Tenho interesse na oferta relâmpago do Aparador. Quero mais informações.");
+      window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + msg, '_blank');
+    }
+
+    // assign events
+    document.getElementById('buyBtn').addEventListener('click', goToCheckout);
+    document.getElementById('buyBtn2').addEventListener('click', goToCheckout);
+    document.getElementById('whatsBtn').addEventListener('click', openWhats);
+
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Optional: small A/B for headline to boost conversion (rotate text)
+    (function heroRotate(){
+      const headlines = [
+        "Aparador de pelos portátil — IPX7 + LED para precisão no banho",
+        "Oferta relâmpago: Aparador resistente à água com LED — só hoje!",
+        "Corte preciso no banho — Aparador recarregável com 30 dias garantia"
+      ];
+      let i = Math.floor(Math.random()*headlines.length);
+      document.getElementById('hero-title').textContent = headlines[i];
+    })();
+
+  </script>
 </body>
 </html>
