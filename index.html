@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aparador de Pelos Portátil — Oferta Especial</title>
+  <meta name="description" content="Aparador de pelos masculino à prova d'água com LED. Recarregável, seguro e prático.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="assets/logo.svg" alt="Logo" class="logo">
+      <nav>
+        <a href="#features">Recursos</a>
+        <a href="#depoimentos">Avaliações</a>
+        <a href="#checkout">Comprar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Aparador à Prova d’Água com LED</h1>
+          <p class="lead">Use no banho, sem cortes, recarregável e seguro. Oferta exclusiva: apenas <strong>R$149</strong>.</p>
+          <a href="#checkout" class="btn btn-primary">Comprar agora</a>
+        </div>
+        <div class="hero-img">
+          <img src="assets/aparador.jpg" alt="Aparador de pelos">
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Por que escolher este aparador?</h2>
+        <div class="features-grid">
+          <div class="feature"><h3>IPX7</h3><p>À prova d'água: use direto no banho.</p></div>
+          <div class="feature"><h3>LED Integrado</h3><p>Mais precisão em áreas difíceis.</p></div>
+          <div class="feature"><h3>Bateria Recarregável</h3><p>Até 40 minutos de uso contínuo.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="section alt">
+      <div class="container">
+        <h2>Avaliações de clientes</h2>
+        <blockquote>“Muito bom! Usei no banho sem problemas. Recomendo.” — Carlos</blockquote>
+        <blockquote>“O LED ajuda muito, corte seguro e rápido.” — João</blockquote>
+      </div>
+    </section>
+
+    <section id="checkout" class="section">
+      <div class="container">
+        <h2>Oferta Exclusiva</h2>
+        <p>Garanta o seu por apenas <strong>R$149</strong>. Frete grátis e entrega rápida.</p>
+        <form id="checkoutForm">
+          <input type="text" id="nome" placeholder="Seu nome" required>
+          <input type="email" id="email" placeholder="Seu e-mail" required>
+          <input type="tel" id="telefone" placeholder="WhatsApp">
+          <button type="submit" class="btn btn-primary">Pagar com Pix</button>
+        </form>
+        <div id="pix-area" class="pix-area" hidden>
+          <p>Escaneie o QR Code ou copie o código Pix abaixo:</p>
+          <img src="assets/pix-qrcode.png" alt="QR Pix" class="pix-qrcode">
+          <textarea readonly id="pix-code">00020126580014BR.GOV.BCB.PIX0136+5511999999995204000053039865405149.005802BR5925APARADOR STORE6009SAO PAULO62070503***6304ABCD</textarea>
+          <button class="btn btn-ghost" id="copyPix">Copiar código</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Aparador Store. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
